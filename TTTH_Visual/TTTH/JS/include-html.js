@@ -1,7 +1,8 @@
-$(document).ready(function () {
+﻿$(document).ready(function () {
   
     $.get('header-menu.html', function (res) {
         $('#header-menu').html(res);
+        //Sự kiện active menu
         var path = document.location.pathname;
         var activeMenuId = '';
         if (path.lastIndexOf("index.html") >= 0) {

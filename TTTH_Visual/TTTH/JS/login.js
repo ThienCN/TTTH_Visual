@@ -6,7 +6,9 @@ $(function () {
 
     //Cờ cho 2 thông báo lỗi: username, password
     var error_user=false;
-    var error_pass = false;
+    var error_pass = false; 
+
+
 
     //Khi di chuyển chuột ra khỏi textbox username: ta sẽ kiểm tra username có hợp lệ không
     $("#txt-user").focusout(function() { 

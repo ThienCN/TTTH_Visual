@@ -1,54 +1,119 @@
-/* HEADER: logo and menu chính */
-header .logo{
+﻿/* HEADER: logo and menu chính */
+header .logo {
     width: 50%;
 }
-.menu{ /*thanh menu chính*/
+
+.navbar { /*thanh menu chính*/
     width: 100%;
     position: relative;
-} 
-.navbar{ /*thanh menu chính*/
     background-color: #197485 !important;
     padding: 0px;
     margin: 0px;
     border: 0px;
 }
-#nav-left{/*id=navbar --> id của menu-left để khi gom lại*/
+
+#nav-left { /*id=navbar --> id của menu-left để khi gom lại*/
     padding: 0px;
-    margin: 0px;    
+    margin: 0px;
     overflow-x: hidden; /*Bỏ thang scroll ngang trong menu thu gọn*/
-}  
-a.navbar-brand{ /*icon home đầu thanh menu*/
-    float: left;   
-    padding: 15px;
+}
+
+.navbar-brand a { /*icon home đầu thanh menu*/
+    float: left;
+    padding-right: 10px;
     color: white !important;
     font-size: 25px;
 }
-.navbar-right{
+
+.navbar-right {
     text-align: right;
     margin-top: 5px;
 }
-.navbar-right a{/* Thông tin tên nhân viên đang sử dụng trên menu chính */
+
+.navbar-right a { /* Thông tin tên nhân viên đang sử dụng trên menu chính */
     color: white;
 }
 
+.image-nhan-vien img{
+    border-radius: 50%;
+    width: 11%;
+}
+
+
+
+
 /* MENU-LEFT */
-.nav-menu{
-    z-index: 1;
-    position: absolute;
-    width: 230px;
+.nav-menu {
+    padding-top: 3px;
     background-color: white;
     height: 100%;
     overflow: auto;
     border-right: 2px solid #949494;
 }
-#nav-left ul li a{
+
+#nav-left ul li a {
     font-weight: bold;
     color: #197485;
 }
-#nav-left ul li:hover a{
-    background-color: red;
-   
+
+#nav-left ul li:hover a {
+    background-color: #197485;
+    color:white;
 }
-#nav-left ul li{
+
+#nav-left ul li {
     border-bottom: 1px solid #BEBDBD;
+}
+li.active {
+    background-color: #197485;
+}
+li.active a {
+    color: white !important;
+}
+
+/*CONTENT*/
+.phan-noi-dung {
+    width: 100%;
+    padding-top: 15px;
+    min-height: 1400px;
+}
+.thong-tin-ca-nhan table{
+    border: 1px solid grey;
+    font-weight: bold;
+}
+.thong-tin-ca-nhan table tr td{
+    padding: 10px;
+}
+
+
+@media only screen and (min-width: 768px){
+    .nav-menu{
+        z-index: 1;
+        position: absolute;
+        width: 230px;
+    }
+    .phan-noi-dung {
+        margin: 0 0 0 250px;
+        min-height: 1050px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    header .logo {
+        width: 80%;
+    }
+    .image-nhan-vien {
+        display: none;
+    }
+    .phan-noi-dung {
+        padding-left: 0px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .image-nhan-vien span {
+        display: none;
+    }
+    .image-nhan-vien img {
+        width: 18%;
+    }
 }

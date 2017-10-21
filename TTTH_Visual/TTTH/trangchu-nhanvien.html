@@ -11,52 +11,102 @@
     <script src="./JS/bootstrap.min.js"></script>
     <!-- Glyphicons -->
     <link rel="stylesheet" href="./CSS/font-awesome.min.css">
+    <!-- MY JS -->
+    <script src="./JS/nhanvien.js"></script>
     <!-- MY CSS -->
     <link  rel="stylesheet" href="./CSS/trangchu-nhanvien.css">
 </head>
 <body>
-    <header>
+    <!-- HEADER MENU -->
+    <header> 
         <!-- LOGO HOTEL -->
         <div class="container">
-            <img src="./Pic/logo-TTTH.png" alt="logo" class="logo w3-animate-zoom">
+            <img src="./Pic/logo-TTTH.png" alt="logo" class="logo w3-animate-zoom ">
         </div>
-        <div class="menu">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-left">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
-                    </div>
-                    <div class="nav navbar-nav navbar-right">
-                        <a><img src="./Pic/doremon.png" alt="NhanVien" width="11%" style="border-radius: 50%;"> Hoàng Thị Kim Phụng</a>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-left">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand">
+                        <a href="#"><i class="fa fa-user-circle"></i></a>  
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
-    
+                <div class="nav navbar-nav navbar-right">
+                    <a class="image-nhan-vien"><img src="./Pic/doremon.png" alt="NhanVien"><span> Hoàng Thị Kim Phụng</span></a>
+                </div>
+            </div>
+        </nav>
+        <!-- MENU -->
+        <nav class="navbar-default nav-menu">
+            <div id="nav-left" class="navbar-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="trangchu-nhanvien.html"><i class="fa fa-user-circle"></i> Trang của bạn</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Tra cứu</a></li>
+                    <li><a href="#"><i class="fa fa-comments-o"></i> Tư vấn</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-pencil"></i> Đăng ký khóa học</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-usd"></i> Thu học phí</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Đăng ký online</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Học viên</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Giáo viên</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Khóa học</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Quản lý thông báo</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Quản lý tin tức</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>  Thoát</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <!-- MENU -->
-    <nav class="navbar-default nav-menu">
-        <div id="nav-left" class="navbar-collapse collapse">
-            <ul class="nav">
-                <li><a href="#">Trang của bạn</a></li>
-                <li><a href="#">Tra cứu</a></li>
-                <li><a href="#">Đăng ký khóa học</a></li>
-                <li><a href="#">Thu học phí</a></li>
-                <li><a href="#">Thống kê DS Đăng ký online</a></li>
-                <li><a href="#">Thống kê DS Học viên</a></li>
-                <li><a href="#">Thống kê DS Giáo viên</a></li>
-                <li><a href="#">Thống kê DS Khóa học</a></li>
-                <li><a href="#">Quản lý thông báo</a></li>
-                <li><a href="#">Quản lý tin tức</a></li>
-                <li><a href="#"> Thoát</a></li>
-            </ul>
+    </header>  
+   
+    <!-- CONTENT -->
+    <section class="phan-noi-dung">
+        <div class="thong-tin-ca-nhan">
+            <table class="col-xs-5 col-md-5 col-sm-5">
+                <tbody>
+                    <tr>
+                        <td>Mã nhân viên: </td>
+                        <td>NV15110283</td>
+                    </tr>
+                    <tr>
+                        <td>Họ tên: </td>
+                        <td>Hoàng Thị Kim Phụng</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày sinh: </td>
+                        <td>07/09/1994</td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ: </td>
+                        <td>Kha Vạn Cân, Phường Linh Đông, Quận Thủ Đức, Tp.HCM </td>
+                    </tr>
+                    <tr>
+                        <td>Điện thoại: </td>
+                        <td>01668174561 </td>
+                    </tr>
+                    <tr>
+                        <td>Giới tính: </td>
+                        <td>Nữ </td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td>hoangkimphung070994@gmail.com </td>
+                    </tr>
+                    <tr>
+                        <td>CMND: </td>
+                        <td>24186440 </td>
+                    </tr>
+                    <tr>
+                        <td>Trình độ học vấn: </td>
+                        <td>Tiến sĩ </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </nav>
+    </section>
+
 </body>
 </html>
