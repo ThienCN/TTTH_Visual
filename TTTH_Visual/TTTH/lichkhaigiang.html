@@ -13,104 +13,18 @@
     <link rel="stylesheet" href="./CSS/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/w3.css">
     <title>Lịch khai giảng</title>
+
     <link rel="stylesheet" href="./CSS/dangkykhoahoc.css">
     <link rel="stylesheet" href="CSS/lichkhaigiang.css">
-    <script>
-        $(document).ready(function () {
-            $("#collapse1").on("hide.bs.collapse", function () {
-                $(".pnl1").html('<strong>LẬP TRÌNH TRÊN MOBILE</strong><span class="glyphicon glyphicon-menu-down" style="float:right"></span>');
-            });
-            $("#collapse1").on("show.bs.collapse", function () {
-                $(".pnl1").html('<strong>LẬP TRÌNH TRÊN MOBILE</strong><span class="glyphicon glyphicon-menu-up" style="float:right"></span>');
-            });
+    <link rel="stylesheet"href="CSS/header-menu-fooder.css" />
 
-            $("#collapse2").on("hide.bs.collapse", function () {
-                $(".pnl2").html('<strong>ỨNG DỤNG CNTT NÂNG CAO (TIN HỌC VĂN PHÒNG)</strong><span class="glyphicon glyphicon-menu-down" style="float:right"></span>');
-            });
-            $("#collapse2").on("show.bs.collapse", function () {
-                $(".pnl2").html('<strong>ỨNG DỤNG CNTT NÂNG CAO (TIN HỌC VĂN PHÒNG)</strong><span class="glyphicon glyphicon-menu-up" style="float:right"></span>');
-            });
-
-            $("#collapse3").on("hide.bs.collapse", function () {
-                $(".pnl3").html('<strong>CÁC LỚP CHUYÊN ĐỀ</strong><span class="glyphicon glyphicon-menu-down" style="float:right"></span>');
-            });
-            $("#collapse3").on("show.bs.collapse", function () {
-                $(".pnl3").html('<strong>CÁC LỚP CHUYÊN ĐỀ</strong><span class="glyphicon glyphicon-menu-up" style="float:right"></span>');
-            });
-        });
-    </script>
+    <script src="JS/updown.js"></script>
+    <script src="JS/include-html.js"></script>
 </head>
 
 <body>
     <!-- Logo and menu bar -->
-    <header>
-        <div class="container">
-            <img src="./Pic/logo.png" alt="logo" class="logo w3-animate-zoom">
-        </div>
-        <div class="menu">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="trangchu.htm"><i class="fa fa-home"></i></a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li><a href="trangchu.htm">Trang chủ</a></li>
-                            <li class="active"><a href="lichkhaigiang.html">Lịch khai giảng</a></li>
-                            <li><a href="#">Tin tức</a></li>
-                            <li><a href="#">Thông báo</a></li>
-                            <li><a href="lienhe.html">Liên hệ</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="dangkykhoahoc.html"><i class="fa fa-address-card"> Đăng ký khóa học</i></a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#modallogin"><i class="fa fa-user-circle-o"> Đăng nhập</i></a></li>
-                        </ul>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="modallogin" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header w3-center">
-                                    <img src="./Pic/avatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label>Tên đăng nhập:</label>
-                                            <input type="text" class="form-control" id="txt-user" placeholder="Từ 5 đến 20 ký tự" name="username" required>
-                                            <span class="error" id="error-user"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Mật khẩu:</label>
-                                            <input type="password" class="form-control" id="txt-pass" placeholder="Không ít hơn 5 ký tự" name="password" required>
-                                            <span class="error" id="error-pass"></span>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" value="" checked>Lưu mật khẩu</label>
-                                        </div>
-                                        <span class="error" id="error-login"></span>
-                                        <div class="div-btnLogin">
-                                            <button id="btnLogin" type="button"><span class="glyphicon glyphicon-off"></span> ĐĂNG NHẬP</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <p><a href="#" style="color:blue">Đăng ký</a></p>
-                                    <p><a href="#" style="color:blue">Quên mật khẩu</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <header id="header-menu"></header>
 
     <!--Slide-->
     <div class="container">
@@ -669,23 +583,7 @@
     </div>
 
     <!-- Footer: Thông tin, địa chỉ -->
-    <footer>
-        <div class="container">
-            <div class="col-xs-12 col-sm-12 col-md-4">
-                <p style="font-weight:bold; font-size: 20px">TRUNG TÂM TIN HỌC ANGEL</p>
-                <p><i class="fa fa-map-marker"></i> Địa chỉ: 01 Kha Vạn Cân, Phường Linh Đông, Quận Thủ Đức, Tp.HCM<br>
-                    <i class="fa fa-phone"></i> Điện thoại: 01668174561 - 0964736522<br>
-                    <i class="fa fa-envelope"></i> Email: hoangkimphung070994@gmail.com<br>
-                    <i class="fa fa-calendar-times-o"></i> Giờ làm việc: <br> Từ thứ 2 đến thứ 6<br> 07g30 đến 15g<br> Thứ
-                    7 và Chủ nhật<br> 07g30 đến 11g30 </p>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-8">
-                <a href="https://www.google.com/maps/place/Ng%C3%A3+b%E1%BA%A3y,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7675662,106.6720446,17z/data=!3m1!4b1!4m5!3m4!1s0x31752ee0695b94c5:0xf563b73049b3d3c7!8m2!3d10.7675609!4d106.6742333?hl=vi"
-                    target="_blank">
-                        <img src="./Pic/maps.png" alt="google map" style="width:100%"></a>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
 </body>
 
 </html>
