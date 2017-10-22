@@ -67,8 +67,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\dangkykhoahoc.css" />
     <Content Include="CSS\font-awesome.min.css" />
     <Content Include="CSS\header-menu-fooder.css" />
+    <Content Include="CSS\lichkhaigiang.css" />
     <Content Include="CSS\trangchu-nhanvien.css" />
     <Content Include="CSS\index.css" />
     <Content Include="CSS\thongbao_tintuc.css" />
@@ -87,6 +89,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="JS\nhanvien.js" />
+    <Content Include="lichkhaigiang.html" />
     <Content Include="noidungthongbao.html" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\TTTH.csproj.CoreCompileInputs.cache" />
