@@ -66,13 +66,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\bootstrap-datepicker.css" />
     <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\dangkykhoahoc.css" />
     <Content Include="CSS\font-awesome.min.css" />
     <Content Include="CSS\header-menu-fooder.css" />
+    <Content Include="CSS\lichkhaigiang.css" />
     <Content Include="CSS\trangchu-nhanvien.css" />
     <Content Include="CSS\index.css" />
     <Content Include="CSS\thongbao_tintuc.css" />
     <Content Include="CSS\w3.css" />
+    <Content Include="dangkykhoahoc.html" />
     <Content Include="File\QuyetDinh.docx" />
     <Content Include="File\QuyetDinh.pdf" />
     <Content Include="File\ThongBao.docx" />
@@ -86,7 +90,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="JS\bootstrap-datepicker.js" />
     <Content Include="JS\nhanvien.js" />
+    <Content Include="JS\updown.js" />
+    <Content Include="JS\validate.js" />
+    <Content Include="lichkhaigiang.html" />
+    <Content Include="lienhe.html" />
     <Content Include="noidungthongbao.html" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\TTTH.csproj.CoreCompileInputs.cache" />
@@ -112,6 +121,7 @@
     <Content Include="JS\jquery-3.2.1.min.js" />
     <Content Include="JS\login.js" />
     <Content Include="JS\tuvan.js" />
+    <Content Include="Pic\banner-dang-ky.jpg" />
     <Content Include="Pic\dangky-bottom.png" />
     <Content Include="Pic\dangky-right.png" />
     <Content Include="Pic\dangkykhoahoc.gif" />

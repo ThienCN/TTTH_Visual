@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng ký khóa học</title>
+
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <script src="./JS/jquery-3.2.1.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="JS/bootstrap-datepicker.js"></script>
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="./CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap-datepicker.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="CSS/w3.css">
+    <link rel="stylesheet" href="./CSS/dangkykhoahoc.css" />
+    <link rel="stylesheet" href="CSS/header-menu-fooder.css" />
+    <!--My JS-->
+    <script src="JS/validate.js"></script>
+    <script src="JS/include-html.js"></script>
+</head>
+
+<body>
+    <!-- Logo and menu bar -->
+    <header id="header-menu"></header>
+    <!-- Image -->
+    <section>
+        <div class="container" style="padding-top: 10px">
+            <img src="./Pic/banner-dang-ky.jpg" alt="logo" width="100%">
+        </div>
+    </section>
+    <!-- Thông tin đăng ký khóa học -->
+    <div class="container thong-tin-dang-ky" style="padding: 0px">
+        <div class="col-sm-12 col-xs-12" style="padding: 0 45px">
+            <form id="formdk" name="myform" onsubmit=r eturn Validate()>
+                <h2 class="muc-ca-nhan">THÔNG TIN CÁ NHÂN</h2>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 control-label">
+                            <label class="">Họ và tên:</label>
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" placeholder="Nguyễn Văn A" id="form_username" name="usertext">
+                        </div>
+                        <div class="col-sm-4">
+                            <span class="error_form" id="username_error_message"  style="line-height: 40px;color: red"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 control-label">
+                            <label class="">Ngày sinh:</label>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="input-group date" data-provide="datepicker">
+                                <input type="text" class="form-control" name="date">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <span class="val_error" id="date_error" style="line-height: 40px"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 control-label">
+                            <label class="">SĐT:</label>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" placeholder="0123456789" id="form_telephone" name="telephonetext">
+                        </div>
+                        <div class="col-sm-4">
+                            <span class="error_form" id="telephone_error_message" style="line-height: 40px;color: red"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 control-label">
+                            <label class="">Email:</label>
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" placeholder="example@gmail.com" id="form_email" name="emailtext">
+                        </div>
+                        <div class="col-sm-4">
+                            <span class="error_form" id="email_error_message" style="line-height: 40px; color: red"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr>
+                <h2 class="muc-ca-nhan">THÔNG TIN ĐĂNG KÝ</h2>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3 control-label">
+                            <label class="">Lớp học:</label>
+                        </div>
+                        <div class="col-sm-5 col-xs-10">
+                            <select class="form-control" id="mySelect">
+                                <option>Chọn lớp học</option>
+                                <option value="lta">Lập trình Android (Thứ 2-4-6 17:30-21:00)</option>
+                                <option value="lti" style="background: lightcyan">Lập trình IOS (Thứ 2-4-6 17:30-21:00)</option>
+                                <option value="thvp">Ứng dụng CNTT nâng cao (Tin học văn phòng) (Thứ 2-4-6 17:30-21:00)</option>
+                                <option value="tkw" style="background: lightcyan">Thiết kế website (Thứ 2-4-6 17:30-21:00)</option>
+                                <option value="csdl">Thiết kế cơ sở dữ liệu (Thứ 2-4-6 17:30-21:00)</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="dkthem"></div>
+                <label class="fa fa-plus-square" onclick="appendText()" id="addMH"> Đăng ký thêm</label><br>
+                <div class="clearfix"></div>
+                <div class="form-group">
+                    <input data-togle="modal" data-target="modallogin" type="submit" id="register_button" class="w3-border w3-round-large w3-hover-blue" value="Hoàn tất đăng ký">
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+        <br>
+    </div>
+    <br><br>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modallogin" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header w3-center">
+                    <img src="./Pic/logoMain.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="checkbox-login">
+                        <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="HocVien" name="gender" checked> H?c viên</label>
+                        <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="GiaoVien" name="gender"> Giáo viên</label>
+                        <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="NhanVien" name="gender"> Nhân viên</label>
+                        <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="QuanTriVien" name="gender"> Qu?n tr? viên</label>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form>                               
+                        <div class="form-group">
+                            <label>Tên dang nh?p:</label>
+                            <input type="text" class="form-control" id="txt-user" placeholder="T? 5 d?n 20 ký t?" name="username" required>
+                            <span class="error" id="error-user"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>M?t kh?u:</label>
+                            <input type="password" class="form-control" id="txt-pass" placeholder="Không ít hon 5 ký t?" name="password" required>
+                            <span class="error" id="error-pass"></span>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" checked>Luu m?t kh?u</label>
+                        </div>
+                        <span class="error" id="error-login"></span>
+                        <div class="div-btnLogin">
+                            <button id="btnLogin" type="button" style="color:white"><span class="fa fa-sign-in"></span> ÐANG NH?P</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p><a href="#" style="color:blue">Quên m?t kh?u</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer: Thông tin, địa chỉ -->
+    <footer id="footer"></footer>
+
+</body>
+
+</html>
