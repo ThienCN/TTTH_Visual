@@ -95,6 +95,7 @@
     <Content Include="JS\updown.js" />
     <Content Include="JS\validate.js" />
     <Content Include="lichkhaigiang.html" />
+    <Content Include="lienhe.html" />
     <Content Include="noidungthongbao.html" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\TTTH.csproj.CoreCompileInputs.cache" />
