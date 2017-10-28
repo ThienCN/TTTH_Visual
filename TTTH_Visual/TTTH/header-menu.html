@@ -1,184 +1,96 @@
-<div class="container">
-    <img src="./Pic/logo-TTTH.png" alt="logo" class="logo w3-animate-zoom">
-</div>
-<div class="menu">
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-left">
-                    <li id="index"><a href="index.html">Trang chủ</a></li>
-                    <li id="lich-khai-giang"><a href="lichkhaigiang.html">Lịch khai giảng</a></li>
-                    <li id="tin-tuc"><a href="tintuc.html">Tin tức</a></li>
-                    <li id="thong-bao"><a href="thongbao.html">Thông báo</a></li>
-                    <li id="lien-he"><a href="#">Liên hệ</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="dangkykhoahoc.html"><i class="fa fa-address-card"></i>
-                                    <span class="menu-right">Đăng ký khóa học</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-toggle="modal" data-target="#modallogin"><i class="fa fa-user-circle-o"></i>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <script src="JS/login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./Pic/logo-TTTH.png" alt="logo" class="logo w3-animate-zoom">
+    </div>
+    <div class="menu">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li id="index"><a href="index.html">Trang chủ</a></li>
+                        <li id="lich-khai-giang"><a href="lichkhaigiang.html">Lịch khai giảng</a></li>
+                        <li id="tin-tuc"><a href="tintuc.html">Tin tức</a></li>
+                        <li id="thong-bao"><a href="thongbao.html">Thông báo</a></li>
+                        <li id="lien-he"><a href="#">Liên hệ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="dangkykhoahoc.html">
+                                <i class="fa fa-address-card"></i>
+                                <span class="menu-right">Đăng ký khóa học</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="modal" data-target="#modallogin">
+                                <i class="fa fa-user-circle-o"></i>
                                 <span class="menu-right">Đăng nhập</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="modallogin" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header w3-center">
-                            <img src="./Pic/logoMain.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <div class="checkbox-login">
-                                <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="HocVien" name="gender" checked> Học viên</label>
-                                <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="GiaoVien" name="gender"> Giáo viên</label>
-                                <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="NhanVien" name="gender"> Nhân viên</label>
-                                <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="QuanTriVien" name="gender"> Quản trị viên</label>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modallogin" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header w3-center">
+                                <img src="./Pic/logoMain.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div class="checkbox-login">
+                                    <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="HocVien" name="gender" checked> Học viên</label>
+                                    <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="GiaoVien" name="gender"> Giáo viên</label>
+                                    <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="NhanVien" name="gender"> Nhân viên</label>
+                                    <label class="col-xs-6 col-md-3 col-sm-3"><input type="radio" value="QuanTriVien" name="gender"> Quản trị viên</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="modal-body">
-                            <form>                               
-                                <div class="form-group">
-                                    <label>Tên đăng nhập:</label>
-                                    <input type="text" class="form-control" id="txt-user" placeholder="Từ 5 đến 20 ký tự" name="username" required>
-                                    <span class="error" id="error-user"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label>Mật khẩu:</label>
-                                    <input type="password" class="form-control" id="txt-pass" placeholder="Không ít hơn 5 ký tự" name="password" required>
-                                    <span class="error" id="error-pass"></span>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox" value="" checked>Lưu mật khẩu</label>
-                                </div>
-                                <span class="error" id="error-login"></span>
-                                <div class="div-btnLogin">
-                                    <button id="btnLogin" type="button" style="color:white"><span class="fa fa-sign-in"></span> ĐĂNG NHẬP</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <p><a href="#" style="color:blue">Quên mật khẩu</a></p>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Tên đăng nhập:</label>
+                                        <input type="text" class="form-control" id="txt-user" placeholder="Từ 5 đến 20 ký tự" name="username" required>
+                                        <span class="error" id="error-user"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Mật khẩu:</label>
+                                        <input type="password" class="form-control" id="txt-pass" placeholder="Không ít hơn 5 ký tự" name="password" required>
+                                        <span class="error" id="error-pass"></span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" checked>Lưu mật khẩu</label>
+                                    </div>
+                                    <span class="error" id="error-login"></span>
+                                    <div class="div-btnLogin">
+                                        <button id="btnLogin" type="button" style="color:white"><span class="fa fa-sign-in"></span> ĐĂNG NHẬP</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <p><a href="#" style="color:blue">Quên mật khẩu</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</div>
-<!-- JS bắt lỗi đăng nhập -->
-<script>
-    $(function () {
-        //Khi khởi chạy chương trình thì các thông báo lỗi sẽ bị ẩn đi
-        $("#error-user").hide();
-        $("#error-pass").hide();
-        $("#error-login").hide();
+        </nav>
+    </div>
 
-        //Cờ cho 2 thông báo lỗi: username, password
-        var error_user = false;
-        var error_pass = false;
+</body>
 
-        console.log("údhfkjdsh");
-
-        //Khi di chuyển chuột ra khỏi textbox username: ta sẽ kiểm tra username có hợp lệ không
-        $("#txt-user").focusout(function () {
-            CheckUseName();
-        });
-        //Khi di chuyển chuột ra khỏi textbox password: ta sẽ kiểm tra password có hợp lệ không
-        $("#txt-pass").focusout(function () {
-            CheckPass();
-        });
-        //Kiểm tra thông tin đăng nhập đã đúng và hợp lệ không    
-        $("#btnLogin").click(function (e) {
-            e.preventDefault();
-            CheckLogin();
-        });
-
-
-        //Hàm kiểm tra username có hợp lệ không
-        function CheckUseName() {
-            var user_length = $("#txt-user").val().length;
-
-            if (user_length < 5 || user_length > 20) {
-                $("#error-user").html("Từ 5 đến 20 ký tự");
-                $("#error-user").show();
-                error_user = true;
-            } else {
-                $("#error-user").hide();
-            }
-        }
-        //Hàm kiểm tra password có hợp lệ không
-        function CheckPass() {
-            var pass_length = $("#txt-pass").val().length;
-
-            if (pass_length < 5) {
-                $("#error-pass").html("Không ít hơn 5 ký tự");
-                $("#error-pass").show();
-                error_pass = true;
-            } else {
-                $("#error-pass").hide();
-            }
-        }
-        //Hàm kiểm tra thông tin đăng nhập đã đúng và hợp lệ không
-        function CheckLogin() {
-            //Đặt cờ cho user và pass
-            error_user = false;
-            error_pass = false;
-            //Lấy giá trị user và pass
-            var user = $.trim($("#txt-user").val());
-            var pass = $.trim($("#txt-pass").val());
-            //Nếu user và pass đang để trống thì thông báo ngay
-            if (user == "" && pass == "") {
-                $("#error-user").html("Yêu cầu nhập tên đăng nhập");
-                $("#error-user").show();
-                $("#error-pass").html("Yêu cầu nhập mật khẩu");
-                $("#error-pass").show();
-                return;
-            } else {
-                if (user == "") {
-                    $("#error-user").html("Yêu cầu nhập tên đăng nhập");
-                    $("#error-user").show();
-                    return;
-                }
-                if (pass == "") {
-                    $("#error-pass").html("Yêu cầu nhập mật khẩu");
-                    $("#error-pass").show();
-                    return;
-                }
-            }
-
-            //Check user và pass có hợp lệ theo yêu cầu hay không
-            CheckUseName();
-            CheckPass();
-
-            //Nếu đã điền đầy đủ user và pass thì ta kiểm tra dữ liệu có đúng ko
-            if (error_user == false && error_pass == false) {
-
-                if (user == "hoangphung" && pass == "0709") {
-                    $("#error-login").hide();
-                    //window.location.assign("demo.html");
-                } else {
-                    if (user != "hoangphung") {
-                        $("#error-user").html("Tên đăng nhập không chính xác");
-                        $("#error-user").show();
-                    }
-                    if (pass != "0709") {
-                        $("#error-pass").html("Mật khẩu không chính xác");
-                        $("#error-pass").show();
-                    }
-                }
-            }
-        }
-    });
-</script>
+</html>

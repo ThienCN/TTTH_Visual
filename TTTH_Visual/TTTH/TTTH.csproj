@@ -72,9 +72,10 @@
     <Content Include="CSS\font-awesome.min.css" />
     <Content Include="CSS\header-menu-fooder.css" />
     <Content Include="CSS\lichkhaigiang.css" />
-    <Content Include="CSS\trangchu-nhanvien.css" />
+    <Content Include="CSS\menu-nhan-vien.css" />
     <Content Include="CSS\index.css" />
     <Content Include="CSS\thongbao_tintuc.css" />
+    <Content Include="CSS\nhanvien.css" />
     <Content Include="CSS\w3.css" />
     <Content Include="dangkykhoahoc.html" />
     <Content Include="File\QuyetDinh.docx" />
@@ -91,12 +92,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="JS\bootstrap-datepicker.js" />
-    <Content Include="JS\nhanvien.js" />
+    <Content Include="JS\NV-dky-khoa-hoc.js" />
+    <Content Include="JS\NV-tra-cuu-DKOnl.js" />
     <Content Include="JS\updown.js" />
     <Content Include="JS\validate.js" />
     <Content Include="lichkhaigiang.html" />
     <Content Include="lienhe.html" />
     <Content Include="noidungthongbao.html" />
+    <Content Include="NV-dang-ky-khoa-hoc.html" />
+    <Content Include="NV-thu-hoc-phi.html" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\TTTH.csproj.CoreCompileInputs.cache" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
@@ -143,7 +147,8 @@
     <Content Include="Pic\tong-KG.png" />
     <Content Include="thongbao.html" />
     <Content Include="tintuc.html" />
-    <Content Include="trangchu-nhanvien.html" />
+    <Content Include="NV-tra-cuu-DKOnl.html" />
+    <Content Include="nhanvien.html" />
     <Content Include="Video\GioiThieuTrungTam.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>

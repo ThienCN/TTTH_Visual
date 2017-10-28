@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Thu học phí</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <script src="./JS/jquery-3.2.1.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="./CSS/font-awesome.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/w3.css">
+    <!-- MY JS -->
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./CSS/menu-nhan-vien.css">
+    <link rel="stylesheet" href="./CSS/nhanvien.css">
+</head>
+<body>
+    <!-- HEADER MENU -->
+    <header>
+        <!-- LOGO HOTEL -->
+        <div class="container">
+            <img src="./Pic/logo-TTTH.png" alt="logo" class="logo w3-animate-zoom ">
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-left">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand">
+                        <a href="NV-thu-hoc-phi.html">
+                            <i class="glyphicon glyphicon-usd"></i>
+                            <span class="page-trich-dan"> THU HỌC PHÍ</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <a class="image-nhan-vien" style="text-decoration:none"><img src="./Pic/doremon.png" alt="NhanVien"><span> Hoàng Thị Kim Phụng</span></a>
+                </div>
+            </div>
+        </nav>
+        <!-- MENU -->
+        <nav class="navbar-default nav-menu">
+            <div id="nav-left" class="navbar-collapse collapse">
+                <ul class="nav">
+                    <li><a href="nhanvien.html"><i class="fa fa-user-circle"></i> Trang của bạn</a></li>
+                    <li><a href="NV-tra-cuu-DKOnl.html"><i class="fa fa-search"></i> Tra cứu đăng ký online</a></li>
+                    <li><a href="#"><i class="fa fa-comments-o"></i> Tư vấn</a></li>
+                    <li><a href="NV-dang-ky-khoa-hoc.html"><i class="glyphicon glyphicon-edit"></i> Đăng ký khóa học</a></li>
+                    <li class="active"><a href="NV-thu-hoc-phi.html"><i class="glyphicon glyphicon-usd"></i> Thu học phí</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Đăng ký online</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Học viên</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Giáo viên</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Khóa học</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Quản lý thông báo</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Quản lý tin tức</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>  Thoát</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- CONTENT -->
+    <section class="phan-noi-dung">
+        <h3 style="color:#197485; font-weight:bold; text-decoration:underline">BIÊN LAI THU TIỀN</h3>
+        <br />
+        <div>  
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-xs-12 col-sm-4 col-md-2">Mã học viên:</label>
+                    <div class="col-xs-12 col-sm-8 col-md-6">
+                        <input type="text" class="form-control" size="20" placeholder="Mã học viên">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-12 col-sm-4 col-md-2">Họ tên người nộp:</label>
+                    <div class="col-xs-12 col-sm-8 col-md-6">
+                        <input type="text" class="form-control" size="20" placeholder="Nguyễn Thị A">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-12 col-sm-4 col-md-2">Sô tiền nộp:</label>
+                    <div class="col-xs-12 col-sm-8 col-md-6">
+                        <input type="text" class="form-control" size="20" placeholder="200000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-12 col-sm-4 col-md-2">Ngày nộp:</label>
+                    <div class="col-xs-12 col-sm-8 col-md-6">
+                        <input type="date" class="form-control" size="20" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="input-group-btn">
+                            <a href="#" class="btn btn-default">
+                                Xuất biên lai <i class="glyphicon glyphicon-ok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+
+    </section>
+</body>
+</html>
