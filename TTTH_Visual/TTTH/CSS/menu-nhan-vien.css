@@ -1,4 +1,11 @@
-﻿/* HEADER: logo and menu chính */
+﻿body {
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+/* HEADER: logo and menu chính */
 header .logo {
     width: 50%;
 }
@@ -11,23 +18,36 @@ header .logo {
     margin: 0px;
     border: 0px;
 }
+.navbar-nav{
+    margin:0px;
+}
+
 
 #nav-left { /*id=navbar --> id của menu-left để khi gom lại*/
     padding: 0px;
     margin: 0px;
     overflow-x: hidden; /*Bỏ thang scroll ngang trong menu thu gọn*/
 }
+.navbar-brand{
+    height:0px;
+}
 
 .navbar-brand a { /*icon home đầu thanh menu*/
-    float: left;
-    padding-right: 10px;
+    padding-left: 10px;
     color: white !important;
-    font-size: 25px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
+.navbar-brand a i {
+    color: white !important;
+    font-size: 23px;
+}
+
 
 .navbar-right {
     text-align: right;
-    margin-top: 5px;
 }
 
 .navbar-right a { /* Thông tin tên nhân viên đang sử dụng trên menu chính */
@@ -37,6 +57,7 @@ header .logo {
 .image-nhan-vien img{
     border-radius: 50%;
     width: 11%;
+    margin-top: 5px;
 }
 
 
@@ -73,17 +94,12 @@ li.active a {
 
 /*CONTENT*/
 .phan-noi-dung {
-    width: 100%;
-    padding-top: 15px;
-    min-height: 1400px;
-}
-.thong-tin-ca-nhan table{
-    border: 1px solid grey;
-    font-weight: bold;
-}
-.thong-tin-ca-nhan table tr td{
+    max-width: 1300px;
     padding: 10px;
+    min-height: 1050px;
 }
+
+
 
 
 @media only screen and (min-width: 768px){
@@ -93,27 +109,26 @@ li.active a {
         width: 230px;
     }
     .phan-noi-dung {
-        margin: 0 0 0 250px;
+        margin: 0 0 0 240px;
         min-height: 1050px;
     }
 }
 
 @media only screen and (max-width: 767px){
     header .logo {
-        width: 80%;
+        width: 100%;
+        margin-bottom:3px;
     }
     .image-nhan-vien {
         display: none;
     }
     .phan-noi-dung {
-        padding-left: 0px;
+        padding: 5px;
     }
-}
-@media only screen and (max-width: 1000px) {
-    .image-nhan-vien span {
-        display: none;
+    .navbar-brand a {
+        font-size:10px;
     }
-    .image-nhan-vien img {
-        width: 18%;
+    .page-trich-dan{
+        display:none;
     }
 }

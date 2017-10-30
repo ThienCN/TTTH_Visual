@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tra cứu đăng ký online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <script src="./JS/jquery-3.2.1.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="./CSS/font-awesome.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/w3.css">
+    <!-- MY JS -->
+    <script src="JS/NV-tra-cuu-DKOnl.js"></script>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./CSS/menu-nhan-vien.css">
+    <link rel="stylesheet" href="./CSS/nhanvien.css">
+</head>
+<body>
+    <!-- HEADER MENU -->
+    <header>
+        <!-- LOGO HOTEL -->
+        <div class="container">
+            <img src="./Pic/logo-TTTH.png" alt="logo" class="logo w3-animate-zoom ">
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-left">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand">
+                        <a href="NV-tra-cuu-DKOnl.html"><i class="fa fa-search"></i>
+                            <span class="page-trich-dan"> TRA CỨU ĐĂNG KÝ ONLINE</span> 
+                        </a>
+                    </div>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <a class="image-nhan-vien" style="text-decoration:none"><img src="./Pic/doremon.png" alt="NhanVien"><span> Hoàng Thị Kim Phụng</span></a>
+                </div>
+            </div>
+        </nav>
+        <!-- MENU -->
+        <nav class="navbar-default nav-menu">
+            <div id="nav-left" class="navbar-collapse collapse">
+                <ul class="nav">
+                    <li><a href="nhanvien.html"><i class="fa fa-user-circle"></i> Trang của bạn</a></li>
+                    <li class="active"><a href="NV-tra-cuu-DKOnl.html"><i class="fa fa-search"></i> Tra cứu đăng ký online</a></li>
+                    <li><a href="#"><i class="fa fa-comments-o"></i> Tư vấn</a></li>
+                    <li><a href="NV-dang-ky-khoa-hoc.html"><i class="glyphicon glyphicon-edit"></i> Đăng ký khóa học</a></li>
+                    <li><a href="NV-thu-hoc-phi.html"><i class="glyphicon glyphicon-usd"></i> Thu học phí</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Đăng ký online</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Học viên</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Giáo viên</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Khóa học</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Quản lý thông báo</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Quản lý tin tức</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>  Thoát</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>   
+
+    <!-- CONTENT -->
+    <section class="phan-noi-dung">
+        <label> Mã đăng ký Online: </label>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <form>
+                    <div class="input-group search">
+                        <input type="text" id="MaDkyOnl" class="form-control" size="50" placeholder="Nhập mã đăng ký online vào đây" >
+                        <div class="input-group-btn">
+                            <button id="btn-tra-cuu-dkyonline" class="btn btn-default" type="submit" style="background-color: #197485; color:white">
+                                Tìm <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br />
+        <div class="ket-qua-tim-kiem">
+            <label> KẾT QUẢ TÌM KIẾM: </label>
+            <div id="co-ket-qua">
+                <fieldset>
+                    <p style="color: #197485; font-weight: bold; text-decoration: underline">Thông tin người đăng ký: </p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Họ tên </th>
+                                    <th>Ngày sinh</th>
+                                    <th>Địa chỉ</th>
+                                    <th>SĐT</th>
+                                    <th>Giới tính</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="HoTen">Hoàng Thị Kim Phụng</td>
+                                    <td id="ngaySinh">07/09/1994</td>
+                                    <td id="DiaChi">01 Kha Vạn Cân, Phường Linh Đông, Quận Thủ Đức, Tp.HCM</td>
+                                    <td id="SDT">01668174561</td>
+                                    <td id="gioiTinh">Nữ</td>
+                                    <td id="Email">hoangkimphung070994@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <p style="color: #197485; font-weight: bold; text-decoration: underline">Thông tin lớp học đăng ký: </p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Mã lớp </th>
+                                    <th>Tên lớp</th>
+                                    <th>Số buổi</th>
+                                    <th>Buổi học</th>
+                                    <th>Giờ bắt đầu</th>
+                                    <th>Giờ kết thúc</th>
+                                    <th>Học phí</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="maLop">A1</td>
+                                    <td id="tenLop">Lập trình căn bản</td>
+                                    <td id="soBuoi">24</td>
+                                    <td id="buoiHoc">2-4-6</td>
+                                    <td id="gioBatDau">17g30</td>
+                                    <td id="gioiKetThuc">19g30</td>
+                                    <td id="hocPhi">200.000 VND</td>
+                                </tr>
+                                <tr>
+                                    <td id="maLop">A2</td>
+                                    <td id="tenLop">Lập trình nâng cao</td>
+                                    <td id="soBuoi">24</td>
+                                    <td id="buoiHoc">2-6</td>
+                                    <td id="gioBatDau">17g30</td>
+                                    <td id="gioiKetThuc">19g30</td>
+                                    <td id="hocPhi">200.000 VND</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <label style="font-style:italic">Tổng số lớp học đã đăng ký: <span>2</span> </label><br /><br />
+                    <label style="font-style:italic">Tổng số tiền học phí cần đóng: <span>400.000 VNĐ</span> </label>
+                </fieldset>
+
+                <br />
+                <div class="input-group-btn">
+                    <a href="#" class="btn btn-default" id="btn-dky-KH">
+                        Đăng ký khóa học <i class="glyphicon glyphicon-edit"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="khong-co-ket-qua" style="text-align: center">
+                <label>Không tìm thấy kết quả</label>
+            </div>
+
+            
+        </div>
+
+
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng ký khóa học</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <script src="./JS/jquery-3.2.1.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="./CSS/font-awesome.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/w3.css">
+    <!-- MY JS -->
+    <script src="JS/NV-dky-khoa-hoc.js"></script>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./CSS/menu-nhan-vien.css">
+    <link rel="stylesheet" href="./CSS/nhanvien.css">
+</head>
+<body>
+    <!-- HEADER MENU -->
+    <header>
+        <!-- LOGO HOTEL -->
+        <div class="container">
+            <img src="./Pic/logo-TTTH.png" alt="logo" class="logo w3-animate-zoom ">
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-left">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand">
+                        <a href="NV-dang-ky-khoa-hoc.html">
+                            <i class="glyphicon glyphicon-edit"></i>
+                            <span class="page-trich-dan"> ĐĂNG KÝ KHÓA HỌC</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <a class="image-nhan-vien" style="text-decoration:none"><img src="./Pic/doremon.png" alt="NhanVien"><span> Hoàng Thị Kim Phụng</span></a>
+                </div>
+            </div>
+        </nav>
+        <!-- MENU -->
+        <nav class="navbar-default nav-menu">
+            <div id="nav-left" class="navbar-collapse collapse">
+                <ul class="nav">
+                    <li><a href="nhanvien.html"><i class="fa fa-user-circle"></i> Trang của bạn</a></li>
+                    <li><a href="NV-tra-cuu-DKOnl.html"><i class="fa fa-search"></i> Tra cứu đăng ký online</a></li>
+                    <li><a href="#"><i class="fa fa-comments-o"></i> Tư vấn</a></li>
+                    <li class="active"><a href="NV-dang-ky-khoa-hoc.html"><i class="glyphicon glyphicon-edit"></i> Đăng ký khóa học</a></li>
+                    <li><a href="NV-thu-hoc-phi.html"><i class="glyphicon glyphicon-usd"></i> Thu học phí</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Đăng ký online</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Học viên</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Giáo viên</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Khóa học</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Quản lý thông báo</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Quản lý tin tức</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>  Thoát</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- CONTENT -->
+    <section class="phan-noi-dung">
+        <!-- Thông tin học viên -->
+        <fieldset>
+            <p style="font-weight: bold; text-decoration: underline; color: #197485;">Thông tin học viên: </p>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-4 col-md-2">Mã học viên:</label>
+                        <div class="col-xs-12 col-sm-8 col-md-4">
+                            <input id="maHocVien" type="text" class="form-control" size="20" placeholder="Mã học viên" readonly>
+                        </div>       
+                        <label class="control-label col-xs-12 col-sm-4 col-md-2">Ngày sinh:</label>
+                        <div class="col-xs-12 col-sm-8 col-md-4">
+                            <input id="ngaysinh" type="date" class="form-control" size="30">
+                            <span id="error-ngaysinh" class="span-error"></span>
+                        </div>                 
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-4 col-md-2">Họ tên:</label>
+                        <div class="col-xs-12 col-sm-8 col-md-4">
+                            <input id="hoTenHV" type="text" class="form-control" size="30" placeholder="Nguyễn Văn A">
+                            <span id="error-hotenHV" class="span-error"></span>
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-4 col-md-2">Giới tính:</label>
+                        <div class="col-xs-12 col-sm-8 col-md-4">
+                            <select class="form-control">
+                                <option>Nam</option>
+                                <option>Nữ</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-4 col-md-2">Địa chỉ:</label>
+                        <div class="col-xs-12 col-sm-8 col-md-4">
+                            <input id="diachi" type="text" class="form-control" size="30" placeholder="Số nhà, đường, phường, quận">
+                            <span id="error-diachi" class="span-error"></span>
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-4 col-md-2">SĐT:</label>
+                        <div class="col-xs-12 col-sm-8 col-md-4">
+                            <input id="SDT" type="text" class="form-control" size="30" placeholder="0123456789">
+                            <span id="error-SDT" class="span-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-12 col-sm-4 col-md-2">CMND:</label>
+                        <div class="col-xs-12 col-sm-8 col-md-4">
+                            <input id="CMND" type="text" class="form-control" size="30" placeholder="Số chứng minh nhân dân">
+                            <span id="error-CMND" class="span-error"></span>
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-4 col-md-2">Email:</label>
+                        <div class="col-xs-12 col-sm-8 col-md-4">
+                            <input id="email" type="email" class="form-control" size="30" placeholder="email@gmail.com" required>
+                            <span id="error-email" class="span-error"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </fieldset>
+        <br />
+        <!-- Thông tin đăng ký lớp học -->
+        <fieldset>
+            <p style="font-weight: bold; text-decoration: underline; color: #197485;">Thông tin đăng ký lớp học: </p>
+            <div class="table-responsive">
+                <table class="table" id="table-dky-khoahoc">
+                    <thead>
+                        <tr>
+                            <th>Mã lớp </th>
+                            <th>Tên lớp</th>
+                            <th>Giờ bắt đầu</th>
+                            <th>Giờ kết thúc</th>
+                            <th>Số buổi học</th>
+                            <th>Học phí</th>
+                            <th style="width:100px"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <br />
+            <label style="font-style:italic">Tổng học phí phải thanh toán: </label>
+            <div class="input-group-btn">
+                <a href="#" class="btn btn-default" id="btn-thanhtoanHP">
+                    Thanh toán học phí <i class="glyphicon glyphicon-edit"></i>
+                </a>
+            </div>
+        </fieldset>
+        <!-- Chọn lớp học -->
+        <br />
+        <hr />
+        <div style="background-color:#e7e1e1; padding:20px; border:1px double grey;">
+            <label style="font-weight: bold; font-size:20px; text-decoration: underline; color: #197485;">CHỌN LỚP: </label>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-xs-12 col-sm-4 col-md-2">Mã lớp:</label>
+                    <div class="col-xs-12 col-sm-8 col-md-4">
+                        <select class="form-control" id="maLop">
+                            <option>Lop1</option>
+                            <option>Lop2</option>
+                            <option>Lop3</option>
+                        </select>
+                    </div>
+                    <label class="control-label col-xs-12 col-sm-4 col-md-2">Tên lớp:</label>
+                    <div class="col-xs-12 col-sm-8 col-md-4">
+                        <select class="form-control" id="tenLop">
+                            <option>Lập trình Adroid</option>
+                            <option>Lập trình IOS</option>
+                            <option>Hệ thống nhúng</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="input-group-btn">
+                <a id="btn-chon-lop-hoc" class="btn btn-default" style="width:100px">
+                    Chọn <i class="glyphicon glyphicon-ok"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
