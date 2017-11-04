@@ -48,14 +48,14 @@
     text-align: right
 }
 
-.input-group-btn a {
+.input-group-btn button {
     background-color: #197485;
     color: white;
     width: 200px;
     margin-right: 10px;
 }
 
-.input-group-btn a:hover, .input-group-btn a:focus {
+.input-group-btn button:hover, .input-group-btn a:focus {
     color: white;
     background-color: #197485;
 }

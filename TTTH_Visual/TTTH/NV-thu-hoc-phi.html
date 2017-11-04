@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Thu học phí</title>
+    
     <meta charset="UTF-8">
+    <title>Thu học phí</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Boostrap -->
@@ -14,6 +15,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="./CSS/w3.css">
     <!-- MY JS -->
+    <script src="./JS/bien-lai-HP.js"></script>
     <!-- MY CSS -->
     <link rel="stylesheet" href="./CSS/menu-nhan-vien.css">
     <link rel="stylesheet" href="./CSS/nhanvien.css">
@@ -76,33 +78,38 @@
                 <div class="form-group">
                     <label class="control-label col-xs-12 col-sm-4 col-md-2">Mã học viên:</label>
                     <div class="col-xs-12 col-sm-8 col-md-6">
-                        <input type="text" class="form-control" size="20" placeholder="Mã học viên">
+                        <input type="text" class="form-control" size="20" value="HV1" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-xs-12 col-sm-4 col-md-2">Họ tên người nộp:</label>
                     <div class="col-xs-12 col-sm-8 col-md-6">
-                        <input type="text" class="form-control" size="20" placeholder="Nguyễn Thị A">
+                        <input type="text" class="form-control" size="20" value="Nguyễn Thị A" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-xs-12 col-sm-4 col-md-2">Sô tiền nộp:</label>
                     <div class="col-xs-12 col-sm-8 col-md-6">
-                        <input type="text" class="form-control" size="20" placeholder="200000">
+                        <input type="text" class="form-control" size="20" value="1500000" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-xs-12 col-sm-4 col-md-2">Ngày nộp:</label>
                     <div class="col-xs-12 col-sm-8 col-md-6">
-                        <input type="date" class="form-control" size="20" >
+                        <input type="date" id="ngay-nop-HP" class="form-control" size="20" readonly >
                     </div>
+
+                    <script>
+                        var d = new Date();
+                        $("#ngay-nop-HP").val(d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate());                        
+                    </script>
                 </div>
                 <div class="form-group">
                     <div class="col-xs-12 col-sm-12 col-md-8">
                         <div class="input-group-btn">
-                            <a href="#" class="btn btn-default">
+                            <button href="#" class="btn btn-default" id="xuat-bien-lai">
                                 Xuất biên lai <i class="glyphicon glyphicon-ok"></i>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>

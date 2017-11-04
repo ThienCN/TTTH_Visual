@@ -3,16 +3,19 @@
     $("button#btn-tra-cuu-dkyonline").click(function (e) {
         e.preventDefault();
         var maDkyOnl = $("input#MaDkyOnl").val();
-        if (maDkyOnl.trim() != "")
+
+        if (maDkyOnl.trim() == "")
+            alert("Mời bạn nhập mã đăng ký Online!");
+        else if (maDkyOnl.trim() != "NV1") {
+            $(".ket-qua-tim-kiem #co-ket-qua").css("display", "none");
+            $(".ket-qua-tim-kiem #khong-co-ket-qua").css("display", "block");
+        }        
+        else if (maDkyOnl.trim() == "NV1")
         {
             $(".ket-qua-tim-kiem #co-ket-qua").css("display", "block");
             $(".ket-qua-tim-kiem #khong-co-ket-qua").css("display", "none");
         }
-        if (maDkyOnl.trim() == "")
-        {
-            $(".ket-qua-tim-kiem #co-ket-qua").css("display", "none");
-            $(".ket-qua-tim-kiem #khong-co-ket-qua").css("display", "block");
-        }
+        
 
         
     });

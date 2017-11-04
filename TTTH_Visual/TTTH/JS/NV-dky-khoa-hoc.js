@@ -102,9 +102,9 @@
     });
 
 
-
+    var i = 1; 
     //Lấy thông tin đăng ký lớp học lên bảng
-    $("a#btn-chon-lop-hoc").click(function (e) {
+    $("#btn-chon-lop-hoc").click(function (e) {
         e.preventDefault();
 
         if (error_ngaysinh == true || error_hotenHV == true ||
@@ -115,42 +115,51 @@
         else
         {
             //Mã lớp và tên lớp được lấy từ đáng ký
-            var maLop = "<td>" + $("select#maLop").val() + "</td>";
-            var tenlop = "<td>" + $("select#tenLop").val() + "</td>";
+            var maLop = $("select#maLop").val();
+            var tenlop = $("select#tenLop").val();
             //Các thông tin này được lấy từ CSDL theo mã lớp mà HV đó chọn
-            var gioBatDau = "<td>17g30</td>";
-            var gioKetThuc = "<td>19g30</td>";
-            var soBuoiHoc = "<td>24 buổi </td>";
-            var hocPhi = "<td>500.000 VNĐ </td>";
-
-            //Đưa thông tin lên bảng
-            $("table#table-dky-khoahoc").append("<tr>" + maLop + tenlop + gioBatDau
-                + gioKetThuc + soBuoiHoc + hocPhi
-                + "<td><a id='xoa-lop-hoc'>Xóa</a></td></tr>");
+            var gioBatDau = "17g30";
+            var gioKetThuc = "19g30";
+            var soBuoiHoc = "24 buổi";
+            var hocPhi = "500.000 VNĐ";
 
 
-            //Sự kiện xóa lớp đã đăng ký
-            $("#table-dky-khoahoc #xoa-lop-hoc").on("click", function (e) {
-                //e.preventDefault();
-                //Lấy mã lớp tại hàng vừa click
-                //var maLopDel = $(this).closest('tr').find('td:first').text();
 
-                $(this).closest('tr').remove();
-
-                //if (confirm("Bạn có chắc chắn muốn xóa lớp học này không?")) {
-                //    $(this).closest('tr').remove();
-                //    return true;
-                //}
-                return false;
-            });
+                                                           
+            $('#table-dky-khoahoc > tbody').append(
+                
+                $('<tr>').append(
+                    $('<td>').text("Lớp "+ i++)
+                ).append(
+                    $('<td>').text(tenlop)
+                ).append(
+                    $('<td>').text(gioBatDau)
+                ).append(
+                    $('<td>').text(gioKetThuc)
+                ).append(
+                    $('<td>').text(soBuoiHoc)
+                ).append(
+                    $('<td>').text(hocPhi)
+                ).append(
+                    $('<td>').append(
+                    $('<a>').text('Xóa')
+                        .css('cursor', 'pointer')
+                        .click(function (e) {
+                            e.preventDefault();
+                            if (confirm("Bạn có chắc chắn muốn xóa lớp học này không?")) {
+                                $(this).closest('tr').remove();
+                            }
+                        })
+                    )
+                )
+            );
         }
     });
 
 
     $('#btn-thanhtoanHP').click(function () {
 
-        var n = $("#table-dky-khoahoc > tbody").find("> tr:first").length; 
-        
+        var n = $("#table-dky-khoahoc > tbody").find("> tr:first").length;         
 
         if (error_ngaysinh == false || error_hotenHV == false ||
             error_diachi == false || error_SDT == false || error_CMND == false || error_email == false)

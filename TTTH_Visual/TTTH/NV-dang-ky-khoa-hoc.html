@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Đăng ký khóa học</title>
     <meta charset="UTF-8">
+    <title>Đăng ký khóa học</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Boostrap -->
@@ -54,7 +54,7 @@
                     <li><a href="NV-tra-cuu-DKOnl.html"><i class="fa fa-search"></i> Tra cứu đăng ký online</a></li>
                     <li><a href="#"><i class="fa fa-comments-o"></i> Tư vấn</a></li>
                     <li class="active"><a href="NV-dang-ky-khoa-hoc.html"><i class="glyphicon glyphicon-edit"></i> Đăng ký khóa học</a></li>
-                    <li><a href="NV-thu-hoc-phi.html"><i class="glyphicon glyphicon-usd"></i> Thu học phí</a></li>
+                    <li><a href="#" id="menu-thu-hoc-phi"><i class="glyphicon glyphicon-usd"></i> Thu học phí</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Đăng ký online</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Học viên</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Giáo viên</a></li>
@@ -64,6 +64,11 @@
                     <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>  Thoát</a></li>
                 </ul>
             </div>
+            <script>
+                $("#menu-thu-hoc-phi").click(function (e) {
+                    alert("Mời bạn đăng ký khóa học cho học viên trước khi thu học phí!!!");
+                });
+            </script>
         </nav>
 
     </header>
@@ -150,41 +155,35 @@
             <br />
             <label style="font-style:italic">Tổng học phí phải thanh toán: </label>
             <div class="input-group-btn">
-                <a href="#" class="btn btn-default" id="btn-thanhtoanHP">
+                <button href="#" class="btn btn-default" id="btn-thanhtoanHP">
                     Thanh toán học phí <i class="glyphicon glyphicon-edit"></i>
-                </a>
+                </button>
             </div>
         </fieldset>
         <!-- Chọn lớp học -->
         <br />
         <hr />
-        <div style="background-color:#e7e1e1; padding:20px; border:1px double grey;">
+        <div class="col-xs-12 col-sm-12 col-md-6" style="background-color:#e7e1e1; padding:20px; border:1px double grey;">
             <label style="font-weight: bold; font-size:20px; text-decoration: underline; color: #197485;">CHỌN LỚP: </label>
             <form class="form-horizontal">
-                <div class="form-group">
-                    <label class="control-label col-xs-12 col-sm-4 col-md-2">Mã lớp:</label>
-                    <div class="col-xs-12 col-sm-8 col-md-4">
-                        <select class="form-control" id="maLop">
-                            <option>Lop1</option>
-                            <option>Lop2</option>
-                            <option>Lop3</option>
-                        </select>
-                    </div>
-                    <label class="control-label col-xs-12 col-sm-4 col-md-2">Tên lớp:</label>
-                    <div class="col-xs-12 col-sm-8 col-md-4">
+                <div class="form-group">                   
+                    <label class="control-label col-xs-12 col-sm-4 col-md-4">Tên lớp:</label>
+                    <div class="col-xs-12 col-sm-8 col-md-8">
                         <select class="form-control" id="tenLop">
                             <option>Lập trình Adroid</option>
                             <option>Lập trình IOS</option>
                             <option>Hệ thống nhúng</option>
                         </select>
-                    </div>
+                        <br />
+                        <div class="input-group-btn">
+                            <button id="btn-chon-lop-hoc" class="btn btn-default" style="width:100px">
+                                Chọn <i class="glyphicon glyphicon-ok"></i>
+                            </button>
+                        </div>
+                    </div>                    
                 </div>
             </form>
-            <div class="input-group-btn">
-                <a id="btn-chon-lop-hoc" class="btn btn-default" style="width:100px">
-                    Chọn <i class="glyphicon glyphicon-ok"></i>
-                </a>
-            </div>
+            
         </div>
     </section>
 </body>

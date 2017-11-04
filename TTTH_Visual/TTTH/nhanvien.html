@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Trang cá nhân</title>
     <meta charset="UTF-8">
+    <title>Trang cá nhân</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Boostrap -->
@@ -47,7 +47,7 @@
                     <li><a href="NV-tra-cuu-DKOnl.html"><i class="fa fa-search"></i> Tra cứu đăng ký online</a></li>
                     <li><a href="#"><i class="fa fa-comments-o"></i> Tư vấn</a></li>
                     <li><a href="NV-dang-ky-khoa-hoc.html"><i class="glyphicon glyphicon-edit"></i> Đăng ký khóa học</a></li>
-                    <li><a href="NV-thu-hoc-phi.html"><i class="glyphicon glyphicon-usd"></i> Thu học phí</a></li>
+                    <li><a href="#" id="menu-thu-hoc-phi"><i class="glyphicon glyphicon-usd"></i> Thu học phí</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Đăng ký online</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Học viên</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Thống kê DS Giáo viên</a></li>
@@ -57,6 +57,11 @@
                     <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>  Thoát</a></li>
                 </ul>
             </div>
+            <script>
+                $("#menu-thu-hoc-phi").click(function (e) {
+                    alert("Mời bạn đăng ký khóa học cho học viên trước khi thu học phí!!!");
+                });
+            </script>
         </nav>
 
     </header>  
@@ -90,11 +95,17 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                 <div class="div-square">
-                    <a href="NV-thu-hoc-phi.html">
+                    <a href="#" id="icon-thu-hoc-phi">
                         <i class="glyphicon glyphicon-usd"></i>
                         <h4>Thu học phí</h4>
                     </a>
                 </div>
+                <script>
+                    $("#icon-thu-hoc-phi").click(function (e) {
+                        alert("Mời bạn đăng ký khóa học cho học viên trước khi thu học phí!!!");
+                    });
+                </script>
+
             </div>
         </div>
         <div class="row">

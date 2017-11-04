@@ -91,6 +91,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="JS\bien-lai-HP.js" />
     <Content Include="JS\bootstrap-datepicker.js" />
     <Content Include="JS\NV-dky-khoa-hoc.js" />
     <Content Include="JS\NV-tra-cuu-DKOnl.js" />
